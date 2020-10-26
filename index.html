@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+body{
+    text-align: center;
+    margin-top: 80px;
+    background-image: url("time.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.head{
+    font-size: 80px;
+    display: inline-block;
+    color: black;
+    width: 100%;
+    margin-top: 20px;
+}
+
+div.time > h1{
+    display: inline-block;
+    width: 100px;
+    margin: 12px;
+    padding: 10px;
+    margin-top: 20px;
+    color:white;
+    
+}
+h2{
+    display: inline;
+    color: white;
+}
+button{
+    width: 100px;
+   margin: 10px;
+    border-radius: 15px;
+}
+span{
+    color: black;
+}
+b{
+    color: red;
+}
+span{
+    color:whitesmoke;
+}
+#msec{
+    color: red;
+}
+
+#sec{
+    color: white;
+}
+#min{
+    color: white;
+}
+
+</style>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="head"><b>STOP <span>WATCH</span></b></h1>
+            </div>
+
+       
+
+    </div>
+
+    <div class="time">
+        <h1 id="min">0</h1>
+        <h2 id="isto">:</h2>
+        <h1 id="sec">0</h1>
+        <h1 id="msec">0</h1>
+    </div>
+
+    
+        <button id="start"  onclick="start()">Start</button>
+        <button id="pause"  onclick="pause()">Pause</button>
+        <button id="reset"  onclick="reset()">Reset</button>
+    
+    </div>
+
+
+    <script src="SW.js"></script>
+</body>
+</html>
